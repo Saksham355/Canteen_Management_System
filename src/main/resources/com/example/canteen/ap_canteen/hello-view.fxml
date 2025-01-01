@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="1600.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.canteen.ap_canteen.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label text=" MENU " textOverrun="CENTER_ELLIPSIS" wrapText="true">
+        <font>
+            <Font size="33.0" />
+        </font>
+    </Label>
+
+
+    <Label text="Indian" />
+    <TableView fx:id="indianTable" prefHeight="280.0" prefWidth="500.0">
+        <columns>
+            <TableColumn fx:id="indianCodeColumn" text="Code" />
+            <TableColumn fx:id="indianPriceColumn" text="Price" />
+            <TableColumn fx:id="indianAvailabilityColumn" text="Availability" />
+        </columns>
+        <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+        </columnResizePolicy>
+    </TableView>
+
+
+    <Label text="Continental" />
+    <TableView fx:id="continentalTable" prefHeight="280.0" prefWidth="500.0">
+        <columns>
+            <TableColumn fx:id="continentalCodeColumn" text="Code" />
+            <TableColumn fx:id="continentalPriceColumn" text="Price" />
+            <TableColumn fx:id="continentalAvailabilityColumn" text="Availability" />
+        </columns>
+        <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+        </columnResizePolicy>
+    </TableView>
+
+
+    <Label text="Chinese" />
+    <TableView fx:id="chineseTable" prefHeight="280.0" prefWidth="500.0">
+        <columns>
+            <TableColumn fx:id="chineseCodeColumn" text="Code" />
+            <TableColumn fx:id="chinesePriceColumn" text="Price" />
+            <TableColumn fx:id="chineseAvailabilityColumn" text="Availability" />
+        </columns>
+        <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+        </columnResizePolicy>
+    </TableView>
+
+
+    <Label text="Snacks" />
+    <TableView fx:id="snacksTable" prefHeight="280.0" prefWidth="500.0">
+        <columns>
+            <TableColumn fx:id="snacksCodeColumn" text="Code" />
+            <TableColumn fx:id="snacksPriceColumn" text="Price" />
+            <TableColumn fx:id="snacksAvailabilityColumn" text="Availability" />
+        </columns>
+        <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+        </columnResizePolicy>
+    </TableView>
+
+
+    <Label text="Beverages" />
+    <TableView fx:id="beveragesTable" prefHeight="280.0" prefWidth="500.0">
+        <columns>
+            <TableColumn fx:id="beveragesCodeColumn" text="Code" />
+            <TableColumn fx:id="beveragesPriceColumn" text="Price" />
+            <TableColumn fx:id="beveragesAvailabilityColumn" text="Availability" />
+        </columns>
+        <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+        </columnResizePolicy>
+    </TableView>
+
+
+    <Label text="Sweets" />
+    <TableView fx:id="sweetsTable" prefHeight="280.0" prefWidth="500.0">
+        <columns>
+            <TableColumn fx:id="sweetsCodeColumn" text="Code" />
+            <TableColumn fx:id="sweetsPriceColumn" text="Price" />
+            <TableColumn fx:id="sweetsAvailabilityColumn" text="Availability" />
+        </columns>
+        <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+        </columnResizePolicy>
+    </TableView>
+</VBox>
